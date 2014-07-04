@@ -9,7 +9,7 @@
 
 | Name |  | Description |
 | --- | --- | --- |
-| token |  required | token |
+| token |  *required* | token |
 | favorite_airport_code |  | airport_code |
 
 
