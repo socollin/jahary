@@ -1,8 +1,8 @@
-# Profiles API
+# TEST API
 
-## Updating personal profile
+## test Api 
 
-### PATCH /api/profile
+### PATCH /api/test
 
 
 ### Parameters
@@ -10,7 +10,7 @@
 | Name |  | Description |
 | --- | --- | --- |
 | token |  *required* | token |
-| favorite_airport_code |  | airport_code |
+| test_code |  | airport_code |
 
 
 ### Request
@@ -18,13 +18,13 @@
 #### Route
 
 ```
-PATCH /api/profile
+PATCH /api/test
 ```
 
 ### Body
 
 ```
-token=TOKEN_OF_USER_1&favorite_airport_code=TAK
+token=TOKEN_OF_USER_1&test_code=THE42R
 ```
 
 
@@ -42,20 +42,16 @@ token=TOKEN_OF_USER_1&favorite_airport_code=TAK
 {
   "id": 2,
   "name": "MyString",
-  "department": {
+  "testvalue": {
     "id": 1,
-    "name": "旅客",
-    "code": "KD",
-    "icon_filename": "department01.png"
+    "name": "지훈",
+    "code": "jh",
   },
-  “airport_code": "TAK",
-  “airport_name": "高松空港",
-  “favorite_airport_code": "TAK",
-  "chat_role": 1,
+  “name_code": "PJH",
+  “name": "지훈",
   "non_airport_org": true,
-  "unread_important_messages_count": 1,
-  "unread_emergency_messages_count": 0,
-  "unread_announcement_count": 1
+  "messages_count": 1,
+  "count": 0
 }
 ```
 
